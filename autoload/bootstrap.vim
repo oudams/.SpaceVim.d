@@ -27,6 +27,15 @@ function! bootstrap#before() abort
   " Clear Search
   map <leader>h :noh<CR>
 
+  " Fold
+  " zr, za, zc, zo
+  " h fold-commands
+  " autocmd FileType terraform setlocal foldmethod=syntax
+  " To enable fold, and collapse by default
+  let g:terraform_remap_spacebar=1
+  let g:terraform_fold_sections=1
+
+
   " *********************************************
   " Plugin: junegunn/vim-easy-align
   " *********************************************
