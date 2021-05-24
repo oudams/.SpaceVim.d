@@ -3,6 +3,8 @@ function! bootstrap#before() abort
   " Basic config, Keys Mapping
   " *********************************************
   " search cases
+  let g:python3_host_prog='/Users/outdam/.asdf/shims/python3'
+  let g:python_host_prog='/Users/outdam/.asdf/shims/python2'
 
   set ignorecase
   set smartcase
@@ -28,13 +30,14 @@ function! bootstrap#before() abort
   map <leader>h :noh<CR>
 
   " Fold
-  " zr, za, zc, zo
+  " zM, zR
   " h fold-commands
   " autocmd FileType terraform setlocal foldmethod=syntax
   " To enable fold, and collapse by default
   let g:terraform_remap_spacebar=1
   let g:terraform_fold_sections=1
 
+  au FileType markdown setlocal wrap
 
   " *********************************************
   " Plugin: junegunn/vim-easy-align
@@ -43,7 +46,7 @@ function! bootstrap#before() abort
   xmap <leader>a <Plug>(EasyAlign)
 
   " Start interactive EasyAlign for a motion/text object (e.g. gaip)
-  nmap <leader>a <Plug>(EasyAlign)
+  nmap <leader>ga <Plug>(EasyAlign)
 
   " *********************************************
   " Plugin: NERDTREE
@@ -58,9 +61,8 @@ function! bootstrap#before() abort
   " *********************************************
   " Plugin: hashivim/vim-terraform
   " *********************************************
-
-  let g:terraform_align=1
-  let g:terraform_fmt_on_save=1
+  " let g:terraform_align=1
+  " let g:terraform_fmt_on_save=1
 
   " SpaceVim
   " Search on the fly
