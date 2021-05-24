@@ -12,7 +12,7 @@
 # If used as symlink, the project root will change the the source directory
 # All SpaceVim option below [option] section
 [options]
-  # colorscheme = "hybrid" # requires layer name = "colorscheme"
+  colorscheme = "onedark"
   colorscheme_bg = "dark"
   relativenumber = false
   enable_guicolors = true
@@ -72,8 +72,11 @@
   repo = "hashivim/vim-terraform"
 [[custom_plugins]]
   repo = "junegunn/vim-easy-align"
-[[custom_plugins]]
-  repo = "ryanoasis/vim-devicons"
+# [[custom_plugins]]
+#   repo = "ryanoasis/vim-devicons"
+# [[custom_plugins]]
+#   repo   = "dracula/vim"
+#   merged = 0
 # [[custom_plugins]]
 #   repo = "roxma/nvim-yarp"
 # [[layers]]
