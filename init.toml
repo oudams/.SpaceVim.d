@@ -11,20 +11,22 @@
 
 # If used as symlink, the project root will change the the source directory
 # All SpaceVim option below [option] section
+
 [options]
   colorscheme = "onedark"
   colorscheme_bg = "dark"
   relativenumber = false
   enable_guicolors = true
-  statusline_separator = "arrow"
-  statusline_iseparator = "arrow"
-  enable_tabline_filetype_icon = true
   filetree_direction="left"
   filemanager = "nerdtree"
   default_shell = 'VimShell'
   autocomplete_method = "coc"
   buffer_index_type = 4
   bootstrap_before = 'bootstrap#before'
+  automatic_update = true
+  # statusline_separator = "arrow"
+  # statusline_iseparator = "arrow"
+  # enable_tabline_filetype_icon = true
   # bootstrap_after = 'bootstrap#after'
 
 # Add the colorscheme layer to enable all colorschemes
@@ -48,6 +50,7 @@
   name = "denite"
 [[layers]]
   name = "gtags"
+  gtagslabel = "ctags"
 [[layers]]
   name = "ctrlp"
   enable = true
@@ -63,15 +66,17 @@
   merged = false
 [[custom_plugins]]
   repo = "roxma/vim-hug-neovim-rpc"
+[[custom_plugins]]
+  repo = "hashivim/vim-terraform"
+[[custom_plugins]]
+  repo = "junegunn/vim-easy-align"
 [[layers]]
   name = "lang#ruby"
 [[layers]]
   name = "lang#python"
   enable = true
-[[custom_plugins]]
-  repo = "hashivim/vim-terraform"
-[[custom_plugins]]
-  repo = "junegunn/vim-easy-align"
+[[layers]]
+  name = "lang#java"
 # [[custom_plugins]]
 #   repo = "ryanoasis/vim-devicons"
 # [[custom_plugins]]

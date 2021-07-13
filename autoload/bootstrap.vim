@@ -3,8 +3,8 @@ function! bootstrap#before() abort
   " Basic config, Keys Mapping
   " *********************************************
   " search cases
-  let g:python3_host_prog='/Users/outdam/.asdf/shims/python3'
   let g:python_host_prog='/Users/outdam/.asdf/shims/python2'
+  let g:python3_host_prog='/Users/outdam/.asdf/shims/python3'
 
   set ignorecase
   set smartcase
