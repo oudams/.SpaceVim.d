@@ -36,6 +36,7 @@ function! bootstrap#before() abort
   " To enable fold, and collapse by default
   let g:terraform_remap_spacebar=1
   let g:terraform_fold_sections=1
+  au FileType terraform setlocal foldlevel=1
 
   au FileType markdown setlocal wrap
 
